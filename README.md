@@ -1,13 +1,11 @@
 # TLS 1.3 Cryptography Analysis
 
 ## Overview
-
 This project explores the practical application of **modern cryptography in HTTPS communication**, focusing on TLS 1.3.
 
 The project demonstrates how cryptographic session keys are used to protect application data during communication between a browser and a server. Wireshark is used as an analysis tool to observe the encrypted TLS traffic and, in an authorized test environment, demonstrate how possession of the session keys allows the encrypted session to be decrypted.
 
 The purpose of this project is to connect **cryptography theory with real network communication**.
-
 ## Cryptographic Concepts
 
 The project focuses on:
@@ -64,7 +62,7 @@ Cryptographic Components in TLS 1.3
 | Certificates                | Authenticate the server                |
 
 
-3. Obtain Session Keys
+### 3. Obtain Session Keys
 
 The browser was configured to generate a TLS key log using `SSLKEYLOGFILE`.
 
