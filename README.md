@@ -53,6 +53,7 @@ The resulting traffic was captured using Wireshark.
 The captured traffic contained TLS 1.3 records carrying encrypted application data.
 
 Without the appropriate session keys, the application-layer contents cannot simply be read from the encrypted TLS records.
+<img width="1478" height="983" alt="Encrypted" src="https://github.com/user-attachments/assets/451674c1-726d-4880-bfaf-9b9eb4cd64ab" />
 
 ### 3. Obtain Session Keys
 
@@ -74,6 +75,9 @@ Wireshark was configured to use the locally generated session keys.
 The captured TLS records could then be decrypted because the analysis environment possessed the appropriate cryptographic session material.
 
 The decrypted traffic exposed the underlying application-layer protocol and data.
+
+<img width="1478" height="983" alt="Encrypted" src="https://github.com/user-attachments/assets/96e10203-770f-4e31-a244-6b3bcd66e03c" />
+
 
 ## What the Experiment Demonstrated
 
@@ -143,7 +147,7 @@ Through this project I gained practical experience with:
 Future experiments could explore:
 
 * TLS 1.3 key exchange in greater detail
-* ECDHE and forward secrecy
+* ECDHE (Elliptic Curve Diffie–Hellman Ephemeral)and forward secrecy
 * AES-GCM and authenticated encryption
 * Certificate validation
 * Cryptographic attack scenarios in controlled environments
