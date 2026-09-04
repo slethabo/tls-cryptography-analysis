@@ -54,7 +54,16 @@ The captured traffic contained TLS 1.3 records carrying encrypted application da
 
 Without the appropriate session keys, the application-layer contents cannot simply be read from the encrypted TLS records.
 <img width="1478" height="983" alt="Encrypted" src="https://github.com/user-attachments/assets/451674c1-726d-4880-bfaf-9b9eb4cd64ab" />
+Cryptographic Components in TLS 1.3
 
+Explain:
+
+Component	Purpose
+ECDHE	Key exchange
+HKDF	Derives cryptographic secrets
+AES-GCM / ChaCha20-Poly1305	Encrypts application data
+Authentication	Ensures data hasn't been tampered with
+Certificates	Authenticate the server
 ### 3. Obtain Session Keys
 
 The browser was configured to generate a TLS key log using `SSLKEYLOGFILE`.
