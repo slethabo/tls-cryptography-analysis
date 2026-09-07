@@ -7,7 +7,7 @@ A practical analysis of TLS 1.3 session key usage in HTTPS communications. This 
 ## Technical Scope
 
 This analysis focuses on the application of key cryptographic primitives within TLS 1.3:
-
+ 
 * **Key Exchange:** Diffie-Hellman ephemeral key pairs providing Forward Secrecy (PFS).
 * **Traffic Secrets:** Application traffic secret derivation and symmetric key generation.
 * **Authenticated Encryption:** Confidentiality and integrity via AEAD ciphers.
