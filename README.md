@@ -34,9 +34,8 @@ To decrypt TLS 1.3 session traffic, the environment variable `SSLKEYLOGFILE` was
 setx SSLKEYLOGFILE "C:\path\to\tls_keys.log"
 
 ### 2. Observe Encrypted Traffic
+"C:\Users\LethaboSangweni\Pictures\Screenshots\decrypt.png"
 
-
-<img width="1478" height="983" alt="Encrypted" src="https://github.com/user-attachments/assets/451674c1-726d-4880-bfaf-9b9eb4cd64ab" />
 ### 3. Cryptographic Components in TLS 1.3
 
 | Component | Function | Technical Role |
@@ -80,3 +79,4 @@ To prevent session exposure or leakage of sensitive request headers, raw `.pcapn
 * Deep-dive protocol breakdown of HKDF expansion stages in TLS 1.3.
 * Automated extraction of session keys in headless environments.
 * Comparative analysis of static RSA key exchange (TLS 1.2) vs. ECDHE (TLS 1.3).
+
